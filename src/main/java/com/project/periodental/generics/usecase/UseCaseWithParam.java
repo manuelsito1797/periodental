@@ -9,7 +9,7 @@ public abstract class UseCaseWithParam<T,P> {
 
     /**
      * Devuelve una respuesta dado el parámetro
-     * @param param Parametro que recibe el caso de usi
+     * @param param Parametro que recibe el caso de uso
      * @return Respuesta del caso de uso
      */
     public abstract T execute(P param);

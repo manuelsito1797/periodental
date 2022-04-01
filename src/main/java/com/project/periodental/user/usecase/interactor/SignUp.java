@@ -30,7 +30,7 @@ public class SignUp extends UseCaseWithParam<UserResponseModel,LoginRequestModel
     }
 
     @Override
-    public UserResponseModel execute(LoginRequestModel requestModel) {
+    public UserResponseModel execute(LoginRequestModel requestModel) throws RuntimeException {
         if(!requestModel.usernameIsValid()) {
             return presenter.prepareFailView("El nombre de usuario está vacío. Favor ingrese un nombre de usuario.");
         }

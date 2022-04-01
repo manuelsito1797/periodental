@@ -19,4 +19,6 @@ module com.project.periodental {
     opens com.project.periodental to javafx.fxml;
     opens com.project.periodental.adapter.di.activej to io.activej.inject;
     exports com.project.periodental;
+    opens com.project.periodental.controller to javafx.fxml;
+    exports com.project.periodental.controller;
 }
